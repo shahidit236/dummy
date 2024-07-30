@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Logo, Nav, and Search Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            /* justify-content: space-around; */
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: 1px solid blue;
+
+        }
+
+        .nav {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+            margin: 0 20px;
+            border: 1px solid red;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+</body>
+</html>
